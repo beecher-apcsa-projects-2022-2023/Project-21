@@ -1,0 +1,13 @@
+Main: This class takes two integers bigger than 100,000 as user inputs, and it contains the main() method.
+In the main() method, a Scanner object is created to receive user inputs. For each input, the program checks if the input is
+greater than 100,000. If either input is less than or equal to 100,000, the program displays an error message and terminates.
+If both inputs are valid, the program creates a Server object with the two inputs, and then it displays the
+result by calling the toString() method of the Server object.
+
+Server: This class represents the server for computing the GCD of two input numbers and formatting the result.
+It contains a constructor, insertCommas(), formatNumber(), and toString() methods. In the constructor, the two input numbers
+are initialized. The insertCommas() method takes a string as input and inserts commas as thousand separators. The
+formatNumber() method takes a BigInteger as input, converts it to a string, and then calls the insertCommas() method to
+format the string with commas. The toString() method computes the GCD of the two input numbers using the gcd() method of
+the BigInteger class, formats the GCD and the input numbers using the formatNumber() method, and then returns a string
+representation of the result in the format of "GCD of num1 and num2 is: GCD".
